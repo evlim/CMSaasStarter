@@ -152,7 +152,7 @@ git pull [Your Repo Created Above]
 cd CMSaasStarter ## or your repo name if different
 npm install
 ## Create an env file. You'll replace the values in this in later steps.
-cp local_env_template .env.local
+cp .env.example .env.local
 ## Run the project locally in dev mode, and launch the browser
 npm run dev -- --open
 ```
@@ -172,8 +172,8 @@ Github disables CI on new forks by default, so be sure to go into the Github Act
 To manually run all these tools run the following script. You can view it's contents for individual commands.
 
 ```
-# first time only: chmod +x ./check.sh
-./check.sh
+# first time only: chmod +x ./checks.sh
+./checks.sh
 ```
 
 ### Running Developer Tools in your IDE
@@ -321,6 +321,7 @@ After the steps above, you’ll have a working version like the demo page. Howev
   - Add actual SaaS functionality!
   - Replace the admin dashboard with real content (`/src/routes/(admin)/account/+page.svelte`).
   - Add API endpoints and database tables as needed to deliver your SaaS product.
+- Analytics: optionally add analytics to your project. [guide](/analytics_docs.md)
 
 ## Community Extensions
 
